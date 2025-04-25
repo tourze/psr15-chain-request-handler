@@ -40,6 +40,11 @@ class ChainRequestHandler implements RequestHandlerInterface
         return $this;
     }
 
+    public function getHandlers(): array
+    {
+        return $this->handlers;
+    }
+
     /**
      * 依次尝试处理器，直到找到非404响应或处理完所有处理器
      */
