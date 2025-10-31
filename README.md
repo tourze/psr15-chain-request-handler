@@ -1,12 +1,17 @@
 # psr15-chain-request-handler
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 [![Latest Version](https://img.shields.io/packagist/v/tourze/psr15-chain-request-handler.svg)](https://packagist.org/packages/tourze/psr15-chain-request-handler)
 [![Build Status](https://github.com/tourze/php-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/tourze/php-monorepo/actions)
 [![Coverage Status](https://coveralls.io/repos/github/tourze/php-monorepo/badge.svg?branch=main)](https://coveralls.io/github/tourze/php-monorepo?branch=main)
+[![License](https://img.shields.io/packagist/l/tourze/psr15-chain-request-handler.svg)](https://packagist.org/packages/tourze/psr15-chain-request-handler)
 
 ## Introduction
 
-A PSR-15 compatible chain request handler for PHP. This package allows you to combine multiple request handlers in a chain, processing HTTP requests sequentially until a handler returns a non-404 response. If all handlers return 404, a final 404 response is returned.
+A PSR-15 compatible chain request handler for PHP. This package allows you to combine multiple request handlers
+in a chain, processing HTTP requests sequentially until a handler returns a non-404 response. If all handlers
+return 404, a final 404 response is returned.
 
 ## Features
 

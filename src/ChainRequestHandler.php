@@ -37,9 +37,13 @@ class ChainRequestHandler implements RequestHandlerInterface
     public function addHandler(RequestHandlerInterface $handler): self
     {
         $this->handlers[] = $handler;
+
         return $this;
     }
 
+    /**
+     * @return RequestHandlerInterface[]
+     */
     public function getHandlers(): array
     {
         return $this->handlers;
@@ -51,7 +55,7 @@ class ChainRequestHandler implements RequestHandlerInterface
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         // 如果没有处理器，直接返回404
-        if (empty($this->handlers)) {
+        if ([] === $this->handlers) {
             return new Response(404, body: 'No handlers available');
         }
 
@@ -60,7 +64,7 @@ class ChainRequestHandler implements RequestHandlerInterface
             $response = $handler->handle($request);
 
             // 如果响应不是404，直接返回
-            if ($response->getStatusCode() !== 404) {
+            if (404 !== $response->getStatusCode()) {
                 return $response;
             }
         }

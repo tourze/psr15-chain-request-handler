@@ -1,8 +1,11 @@
 # psr15-chain-request-handler
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 [![最新版本](https://img.shields.io/packagist/v/tourze/psr15-chain-request-handler.svg)](https://packagist.org/packages/tourze/psr15-chain-request-handler)
 [![构建状态](https://github.com/tourze/php-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/tourze/php-monorepo/actions)
 [![测试覆盖率](https://coveralls.io/repos/github/tourze/php-monorepo/badge.svg?branch=main)](https://coveralls.io/github/tourze/php-monorepo?branch=main)
+[![许可证](https://img.shields.io/packagist/l/tourze/psr15-chain-request-handler.svg)](https://packagist.org/packages/tourze/psr15-chain-request-handler)
 
 ## 简介
 
